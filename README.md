@@ -48,9 +48,6 @@ The project may be referenced using the following citation information:
 
 Sneha Behera, *OpenVoice: Real-Time Voice Cloning and Synthesis*, 2026.
 
-## License
-
-OpenVoice V1 and OpenVoice V2 are released under the MIT License. This permits users to use, modify, distribute, and integrate the software into both research and commercial projects, provided that the terms of the license are followed.
 
 ## Acknowledgements
 
