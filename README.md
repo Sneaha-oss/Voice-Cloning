@@ -1,63 +1,57 @@
-<div align="center">
-  <div>&nbsp;</div>
-  <img src="resources/openvoicelogo.jpg" width="400"/> 
-
-[Paper](https://arxiv.org/abs/2312.01479) |
-[Website](https://research.myshell.ai/open-voice) <br> <br>
-<a href="https://trendshift.io/repositories/6161" target="_blank"><img src="https://trendshift.io/api/badge/repositories/6161" alt="myshell-ai%2FOpenVoice | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</div>
-
 ## Introduction
 
 ### OpenVoice V1
 
-As we detailed in our [paper](https://arxiv.org/abs/2312.01479) and [website](https://research.myshell.ai/open-voice), the advantages of OpenVoice are three-fold:
+OpenVoice V1 is a real-time voice cloning and speech synthesis framework designed to reproduce the unique characteristics of a reference voice. Its primary objective is to generate natural and expressive speech while maintaining the tone and identity of the original speaker.
+
+The main advantages of OpenVoice V1 are as follows:
 
 **1. Accurate Tone Color Cloning.**
-OpenVoice can accurately clone the reference tone color and generate speech in multiple languages and accents.
+OpenVoice can capture and reproduce the distinctive tone color and vocal characteristics of a reference speaker. This allows the system to generate speech that closely resembles the original voice across multiple languages and accents.
 
 **2. Flexible Voice Style Control.**
-OpenVoice enables granular control over voice styles, such as emotion and accent, as well as other style parameters including rhythm, pauses, and intonation. 
+The framework provides control over different aspects of speech delivery, including emotion, accent, rhythm, pauses, and intonation. This makes it possible to generate speech with variations in speaking style rather than producing a single fixed voice output.
 
-**3. Zero-shot Cross-lingual Voice Cloning.**
-Neither of the language of the generated speech nor the language of the reference speech needs to be presented in the massive-speaker multi-lingual training dataset.
+**3. Zero-Shot Cross-Lingual Voice Cloning.**
+OpenVoice supports voice cloning across different languages without requiring the reference voice and target language to be extensively represented together in the training data. As a result, a voice can be used to generate speech in languages different from the language spoken in the original reference audio.
 
 ### OpenVoice V2
 
-In April 2024, we released OpenVoice V2, which includes all features in V1 and has:
+OpenVoice V2 was introduced as an improved version of the original framework. It retains the core capabilities of OpenVoice V1 while introducing improvements in audio quality, multilingual support, and licensing.
 
 **1. Better Audio Quality.**
-OpenVoice V2 adopts a different training strategy that delivers better audio quality.
+OpenVoice V2 uses an improved training strategy to enhance the overall quality and naturalness of the generated speech. The updated approach aims to produce clearer and more realistic audio compared with the earlier version.
 
-**2. Native Multi-lingual Support.**
-English, Spanish, French, Chinese, Japanese and Korean are natively supported in OpenVoice V2.
+**2. Native Multilingual Support.**
+The second version provides native support for multiple languages, including English, Spanish, French, Chinese, Japanese, and Korean. This improves its ability to generate speech naturally across different linguistic environments.
 
 **3. Free Commercial Use.**
-Starting from April 2024, both V2 and V1 are released under MIT License. Free for commercial use.
+Both OpenVoice V1 and V2 are released under the MIT License. This allows the framework to be used for academic research, personal projects, and commercial applications, subject to the terms of the license.
 
-[Video](https://github.com/myshell-ai/OpenVoice/assets/40556743/3cba936f-82bf-476c-9e52-09f0f417bb2f)
-
-OpenVoice has been powering the instant voice cloning capability of [myshell.ai](https://app.myshell.ai/explore) since May 2023. Until Nov 2023, the voice cloning model has been used tens of millions of times by users worldwide, and witnessed the explosive user growth on the platform.
-
+OpenVoice has been used to support instant voice cloning applications and demonstrates the practical potential of real-time voice synthesis technology. Its combination of voice cloning, style control, and multilingual capabilities makes it suitable for applications such as voice assistants, content generation, accessibility tools, localization, and conversational AI systems.
 
 ## How to Use
-Please see [usage](docs/USAGE.md) for detailed instructions.
+
+The project provides documentation containing detailed instructions for installation, configuration, and usage. Users can follow these instructions to set up the required environment, prepare reference audio, and generate speech using the available OpenVoice models.
+
+The general workflow involves providing a reference voice sample, selecting or entering the target text, configuring the required voice and language settings, and generating the corresponding speech output.
 
 ## Common Issues
 
-Please see [QA](docs/QA.md) for common questions and answers. We will regularly update the question and answer list.
+The project documentation also includes a questions-and-answers section addressing common installation, configuration, and usage issues. This section provides guidance for resolving problems related to dependencies, model loading, audio generation, and other technical requirements.
+
+Users should review the common issues documentation when encountering errors during setup or execution.
 
 ## Citation
-```
-@article{qin2023openvoice,
-  title={OpenVoice: Real-Time Voice Cloning & Synthesis},
-  author={Sneha Behera},
-  year={2026}
-}
-```
+
+The project may be referenced using the following citation information:
+
+Sneha Behera, *OpenVoice: Real-Time Voice Cloning and Synthesis*, 2026.
 
 ## License
-OpenVoice V1 and V2 are MIT Licensed. Free for both commercial and research use.
+
+OpenVoice V1 and OpenVoice V2 are released under the MIT License. This permits users to use, modify, distribute, and integrate the software into both research and commercial projects, provided that the terms of the license are followed.
 
 ## Acknowledgements
-This implementation is based on several excellent projects, [TTS](https://github.com/coqui-ai/TTS), [VITS](https://github.com/jaywalnut310/vits), and [VITS2](https://github.com/daniilrobnikov/vits2). Thanks for their awesome work!
+
+This implementation is based on and inspired by several existing open-source projects and research contributions. These works have provided important foundations for the development of the voice cloning and speech synthesis capabilities implemented in this project.
